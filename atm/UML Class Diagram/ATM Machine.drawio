@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.3">
+  <diagram name="Page-1" id="NtYYlbdjQVGxs6sxBlM2">
+    <mxGraphModel dx="880" dy="434" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pOaWk-a0aYJ7S4pGAkzZ-10" value="Account" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="270" width="230" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="pOaWk-a0aYJ7S4pGAkzZ-11" value="- balance: double&lt;div&gt;- accountType: String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="pOaWk-a0aYJ7S4pGAkzZ-10">
+          <mxGeometry y="26" width="230" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="pOaWk-a0aYJ7S4pGAkzZ-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="pOaWk-a0aYJ7S4pGAkzZ-10">
+          <mxGeometry y="70" width="230" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="pOaWk-a0aYJ7S4pGAkzZ-13" value="+ Account(firstBalance: double, accountType: String);&lt;div&gt;+ deposit(amount: double);&lt;/div&gt;&lt;div&gt;+ withdraw(amount: double);&lt;/div&gt;&lt;div&gt;+ transfer(Account targetAccount, amount: double);&lt;/div&gt;&lt;div&gt;+ displayBalance();&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="pOaWk-a0aYJ7S4pGAkzZ-10">
+          <mxGeometry y="78" width="230" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="pOaWk-a0aYJ7S4pGAkzZ-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pOaWk-a0aYJ7S4pGAkzZ-18" target="pOaWk-a0aYJ7S4pGAkzZ-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pOaWk-a0aYJ7S4pGAkzZ-18" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ATM&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp;+ main(args: String);&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="290" y="250" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pOaWk-a0aYJ7S4pGAkzZ-20" value="«interface»&lt;br&gt;&lt;b&gt;ATMInterface&lt;/b&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="110" y="90" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pOaWk-a0aYJ7S4pGAkzZ-23" value="checkBalance();&lt;div&gt;depositMoney();&lt;/div&gt;&lt;div&gt;withdrawMoney();&lt;/div&gt;&lt;div&gt;transferMoney();&lt;/div&gt;" style="html=1;whiteSpace=wrap;align=left;" vertex="1" parent="1">
+          <mxGeometry x="110" y="140" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pOaWk-a0aYJ7S4pGAkzZ-29" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ATMOperations&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;&amp;nbsp; &amp;nbsp;checkBalance();&lt;div&gt;&amp;nbsp; &amp;nbsp;depositMoney();&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;withdrawMoney();&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;transferMoney();&lt;/div&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="95" y="350" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="pOaWk-a0aYJ7S4pGAkzZ-31" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="pOaWk-a0aYJ7S4pGAkzZ-29" target="pOaWk-a0aYJ7S4pGAkzZ-23">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="330" y="260" as="sourcePoint" />
+            <mxPoint x="490" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pOaWk-a0aYJ7S4pGAkzZ-47" value="" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="pOaWk-a0aYJ7S4pGAkzZ-29" target="pOaWk-a0aYJ7S4pGAkzZ-13">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="370" y="260" as="sourcePoint" />
+            <mxPoint x="480" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pOaWk-a0aYJ7S4pGAkzZ-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pOaWk-a0aYJ7S4pGAkzZ-18" target="pOaWk-a0aYJ7S4pGAkzZ-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="290" as="sourcePoint" />
+            <mxPoint x="530" y="328" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
